@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container ">
+        <a class="navbar-brand" href="/u">LearnIt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown">
+                        @admin - {{username}}
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="/u/my-profile">My profile</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/u/my-courses">My courses</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/u/change-password">Change password</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="../../courses/create">Create courses</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="/u/all-courses">All courses</a>
+                        <div class="dropdown-divider"></div>
+                        <form action="/logout" method="post">
+                            <button class="btn btn-outline-primary btn-logout">Log out</button>
+                        </form>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

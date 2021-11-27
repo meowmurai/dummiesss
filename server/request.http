@@ -1,0 +1,56 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+    "firstName": "lam",
+    "lastname": "ngoc",
+    "email": "lammnuet@gmail.com",
+    "username": "lammn2",
+    "password": "1234"
+}
+
+###
+
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+    "username": "lammn",
+    "password": "1234"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTZiOTAyNTVkMTNkNTkzYmYyODk0YjciLCJpYXQiOjE2MzQ0NDMyMzZ9.EduaFOVSFESo_3vzxncCooZBzl8RZLuoCeJ-KcaZkoU
+
+{
+    "title": "nodejs2 & express2",
+    "description": "hoc nodejs",
+    "url": "youtube.com",
+    "status": "To learn"
+}
+
+###
+
+GET http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTZiOTAyNTVkMTNkNTkzYmYyODk0YjciLCJpYXQiOjE2MzQ0NDMyMzZ9.EduaFOVSFESo_3vzxncCooZBzl8RZLuoCeJ-KcaZkoU
+
+###
+
+PUT http://localhost:5000/api/posts/616ba0004c61129090e09ebc
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTZiOTAyNTVkMTNkNTkzYmYyODk0YjciLCJpYXQiOjE2MzQ0NDMyMzZ9.EduaFOVSFESo_3vzxncCooZBzl8RZLuoCeJ-KcaZkoU
+
+{
+    "title": "new nodejs & express",
+    "description": "new desc",
+    "url": "f8.edu.vn",
+    "status": "learning"
+}
+
+###
+
+DELETE  http://localhost:5000/api/posts/616ba0004c61129090e09ebc
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MTZiOTAyNTVkMTNkNTkzYmYyODk0YjciLCJpYXQiOjE2MzQ0NDMyMzZ9.EduaFOVSFESo_3vzxncCooZBzl8RZLuoCeJ-KcaZkoU

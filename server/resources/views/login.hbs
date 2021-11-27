@@ -1,0 +1,29 @@
+<div class="container my-4">
+
+    <section class="form-container">
+
+
+        <!-- Default form register -->
+        <form class="text-center border border-dark p-5" method="POST" action="/api/auth/login">
+
+            <p class="h4 mb-4">Log in</p>
+
+            <div class="form-row mb-4">
+                <!-- Username -->
+                <input type="text" id="username" name="username" class="form-control mb-4" placeholder="Username">
+
+                <!-- Password -->
+                <input type="password" id="password" name="password" class="form-control" placeholder="Password">
+
+
+                <!-- Sign up button -->
+                <button class="btn btn-info my-4 btn-block waves-effect waves-light" type="submit">Log
+                    in</button>
+            </div>
+            <p><a href="/forgot-password">Forgot password?</a></p>
+            <p>Create an account - <a href="/register">Register</a></p>
+
+        </form>
+    </section>
+
+</div>

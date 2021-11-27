@@ -1,0 +1,19 @@
+<h1>This is MyCourses page</h1>
+<div class="mt-4">
+    <div class="row flex">
+        {{#each courses}}
+        <div class="col-sm-6 col-lg-4">
+            <div class="card mt-4">
+                <div class="card-body">
+                    <a href="#">
+                        <h5 class="card-title">{{this.title}}</h5>
+                        <p class="card-text">{{this.description}}</p>
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFWdSs4pkmV1WIkoIJT5drPxc8tFc2H98hIw&usqp=CAU"
+                            alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</div>
